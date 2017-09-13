@@ -1,0 +1,57 @@
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "system";
+    background-color: #fefefe;
+}
+
+h1 {
+    margin: 0.5em 0 1em;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 0.5em 0 1em;
+    font-size: 1.5em;
+}
+
+.container {
+    margin: 0 auto;
+    width: 650px;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #074151;
+    color: #fff;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #c0d0d4;
+}
+
+th, td {
+    padding: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Heuris</title>
+        <link rel="stylesheet" href="/assets/css/reset.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Heuris</h1>
+            <h2>Channels</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subscribers</th>
+                        <th>Messages published</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{range $channel := .Channels}}
+                        <tr class="{{ $channel.Name }}">
+                            <td class="name">{{ $channel.Name }}</td>
+                            <td class="num-subscribers">{{ $channel.NumSubscribers }}</td>
+                            <td class="num-messages-published">{{ $channel.NumMessagesPublished }}</td>
+                        </tr>
+                    {{end}}
+                </tbody>
+            </table>
+        </div>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>
