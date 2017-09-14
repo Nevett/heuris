@@ -3,6 +3,8 @@
     <h1>Heuris</h1>
 </div>
 
+[![Build Status](https://travis-ci.org/nullseed/heuris.svg?branch=master)](https://travis-ci.org/nullseed/heuris)
+
 ## Build
 
 From the root directory, run:
