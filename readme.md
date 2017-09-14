@@ -1,4 +1,7 @@
-# Heuris
+<div align="center">
+    <img src="https://heuris.io/assets/img/logo.png" alt="Heuris" width="200">
+    <h1>Heuris</h1>
+</div>
 
 ## Build
 
@@ -30,4 +33,18 @@ node client.js
 
 ```
 curl --data "{}" http://localhost:8080/foo
+```
+
+## Docker
+
+Run the container:
+
+```
+docker run -p "8080:8080" nullseed/heuris
+```
+
+Build the container:
+
+```
+docker build -t nullseed/heuris:latest .
 ```
