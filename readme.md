@@ -18,7 +18,7 @@ You can then subscribe to a channel using:
 
 ```
 npm install -g ws
-node client.js foo
+node client.js ws://localhost:8080/foo
 ```
 
 And publish using:
@@ -29,9 +29,11 @@ curl --data "{}" http://localhost:8080/foo
 
 ## Monitoring
 
-Heuris has built in monitoring that is available on `http://localhost:8080`. The
-front end uses WebSockets to update the page in real-time. Event messages are sent
-on channel `_` which means that this channel must not be used in your application. All other channels are free to use.
+Heuris has built in monitoring that is available on `http://localhost:8080`. The front end uses WebSockets to update the page in real-time. Event messages are sent on channel `_` which means that this channel must not be used in your application. All other channels are available to use.
+
+A channel that is published to and has no subscribers will not appear in the front end.
+
+Try Heuris out at [https://heuris.io]().
 
 ## Development
 

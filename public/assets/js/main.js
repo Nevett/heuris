@@ -1,4 +1,9 @@
-var ws = new WebSocket("ws://" + document.location.host);
+var protocol = 'ws://';
+if (window.location.protocol === 'https:')
+    protocol = 'wss://'
+
+var ws = new WebSocket(protocol + document.location.host);
+
 ws.onmessage = function(msg) {
     var channel = JSON.parse(msg.data);
 
