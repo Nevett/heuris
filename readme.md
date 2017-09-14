@@ -4,6 +4,7 @@
 </div>
 
 [![Build Status](https://travis-ci.org/nullseed/heuris.svg?branch=master)](https://travis-ci.org/nullseed/heuris)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nullseed/heuris)](https://goreportcard.com/report/github.com/nullseed/heuris)
 
 ## Build
 
