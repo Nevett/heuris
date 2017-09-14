@@ -6,48 +6,32 @@
 [![Build Status](https://travis-ci.org/nullseed/heuris.svg?branch=master)](https://travis-ci.org/nullseed/heuris)
 [![Go Report Card](https://goreportcard.com/badge/github.com/nullseed/heuris)](https://goreportcard.com/report/github.com/nullseed/heuris)
 
-## Build
+Heuris is a HTTP Pub/Sub service that uses POST requests to publish messages and WebSockets to subscribe to them.
 
-From the root directory, run:
-
-```
-go build
-```
-
-## Run
-
-From the root directory, run:
-
-```
-./heuris
-```
-
-## Use
-
-### Subscribing
-
-```
-cd tools
-npm install -g ws
-node client.js
-```
-
-### Publishing
-
-```
-curl --data "{}" http://localhost:8080/foo
-```
-
-## Docker
-
-Run the container:
+The simplest way to run Heuris is using docker:
 
 ```
 docker run -p "8080:8080" nullseed/heuris
 ```
 
-Build the container:
+You can then subscribe to a channel using:
 
 ```
-docker build -t nullseed/heuris:latest .
+npm install -g ws
+node client.js foo
+```
+
+And publish using:
+
+```
+curl --data "{}" http://localhost:8080/foo
+```
+
+
+## Development
+
+To build heuris, from the root directory, run:
+
+```
+./build.sh
 ```
