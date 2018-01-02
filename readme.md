@@ -33,7 +33,7 @@ Heuris has built in monitoring that is available on `http://localhost:8080`. The
 
 A channel that is published to and has no subscribers will not appear in the front end.
 
-Try Heuris out at [https://heuris.io]().
+Try Heuris out at [https://heuris.io](https://heuris.io).
 
 ## Development
 
